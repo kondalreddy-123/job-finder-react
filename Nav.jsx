@@ -1,11 +1,13 @@
-function Nav(){
+function Nav({nnav}){
     return(
         <nav>
-            <h1>Job FINDER</h1>
+            <h1>JOB FINDER</h1>
             <div>
-            <a href="/">Home</a>
-            <a href="/jobs">Jobs</a>
-            <a href="/fav">Favourites</a></div>
+            <button onClick={()=>nnav("Home")}>Home</button>
+            <button onClick={()=>nnav("Jobs")}>Jobs</button>
+            <button onClick={()=>nnav('Favorites')}>Favourites</button>
+            <button onClick={()=>nnav("Applied")}>Applied Jobs</button>
+            </div>
         </nav>
     )
 }
