@@ -1,0 +1,415 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+    margin: 0;
+    background: #F8FAFC;
+    color: #0F172A;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    color: #1d1770;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav div {
+    background-color: #0F172A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+nav h1 {
+    color: #2563EB;
+    font-size: 35px;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background: linear-gradient(135deg, #0F172A, #2563EB);
+    padding: 80px 20px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.hero div h1 {
+    color: #FFFFFF;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero div p {
+    color: #CBD5E1;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search {
+    background-color: #F8FAFC;
+    padding: 20px;
+}
+
+.search > p {
+    color: #0F172A;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.searh {
+    background-color: #FFFFFF;
+    color: #0F172A;
+    border: 1px solid #CBD5E1;
+    border-radius: 10px;
+    padding: 12px 20px;
+    width: 350px;
+    max-width: 80%;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.searh:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================
+   FILTERS
+========================= */
+
+.fil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.fil select {
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: #334155;
+    cursor: pointer;
+    outline: none;
+}
+
+.fil select:focus {
+    border-color: #2563EB;
+}
+
+
+/* =========================
+   JOB SECTION
+========================= */
+
+.job {
+    background-color: #F8FAFC;
+    padding: 30px;
+}
+
+.job > h1 {
+    color: #0F172A;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   JOB CARD
+========================= */
+
+.job-card {
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 700px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
+    transition: 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.15);
+}
+
+.job-card h1 {
+    color: #0F172A;
+}
+
+.job-card h2,
+.job-card h3 {
+    color: #0F172A;
+}
+
+.job-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.job-card p {
+    color: #64748B;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   JOB BUTTONS
+========================= */
+
+.job-card .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.job-card .btn button {
+    transition: 0.2s;
+}
+
+
+/* Favorite */
+
+.favorite-btn {
+    background-color: #E11D48;
+}
+
+
+/* Details */
+
+.det {
+    background-color: #475569;
+}
+
+
+/* Apply */
+
+.app-btn {
+    background-color: #2563EB;
+}
+
+
+/* Remove Favorite */
+
+.rem-btn {
+    background-color: #DC2626;
+}
+
+
+/* Cancel Application */
+
+.can-btn {
+    background-color: #DC2626;
+}
+
+
+/* =========================
+   JOB DESCRIPTION
+========================= */
+
+.description {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 650px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
+    text-align: left;
+}
+
+.description h3 {
+    color: #0F172A;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description p {
+    color: #64748B;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.description p strong {
+    color: #334155;
+}
+
+.description h4 {
+    color: #2563EB;
+}
+
+.description button {
+    background-color: #64748B;
+    display: block;
+    margin: 20px auto 0;
+}
+
+
+/* =========================
+   APPLICATION PAGE
+========================= */
+
+.ap {
+    background-color: #F8FAFC;
+    padding: 30px 20px;
+}
+
+.ap h1 {
+    color: #0F172A;
+}
+
+.ap > p {
+    color: #64748B;
+}
+
+form {
+    background-color: #FFFFFF;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
+    box-sizing: border-box;
+}
+
+.ap input {
+    display: block;
+    width: 90%;
+    margin: 15px auto;
+    padding: 12px;
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    color: #0F172A;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.ap input:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.ap button {
+    background-color: #2563EB;
+    margin: 8px;
+}
+
+.can {
+    background-color: #64748B !important;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav div {
+        justify-content: center;
+        padding: 15px;
+        margin-top: 10px;
+    }
+
+    nav h1 {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .hero {
+        padding: 50px 15px;
+        margin-top: 10px;
+    }
+
+    .hero div h1 {
+        font-size: 30px;
+    }
+
+    .hero div p {
+        font-size: 16px;
+    }
+
+    .searh {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .job {
+        padding: 15px;
+    }
+
+    .job-card {
+        width: auto;
+        padding: 20px;
+    }
+
+    .job-card .btn {
+        flex-direction: column;
+    }
+
+    .job-card .btn button {
+        width: 100%;
+    }
+
+    .description {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    form {
+        margin: 15px auto;
+        padding: 20px;
+    }
+
+    .ap input {
+        width: 100%;
+    }
+
+    .ap button {
+        width: 90%;
+        margin: 8px auto;
+    }
+}
